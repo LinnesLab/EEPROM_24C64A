@@ -1,13 +1,67 @@
 /*
- * FILENAME:	24C64A.cpp
- * AUTHOR:      Orlando S. Hoilett
- * EMAIL:       ohoilett@purdue.edu
- * VERSION:     0.1
- *
- *
- * DISCLAIMER
- * Copyright (C) Linnes Lab 2016, Purdue University, All rights reserved
- *
+ 
+ FILENAME:		EEPROM_24C64A.cpp
+ AUTHOR:		Orlando S. Hoilett
+ EMAIL:			ohoilett@purdue.edu
+ VERSION:		0.1
+ 
+ 
+ DESCRIPTION
+ This file provides the class definitions for controlling the 24C64A I2C
+ Serial EEPROM. The library allows for single byte write and single byte read.
+ The 24C64A is an EEPROM controlled via I2C. It has 64k memory stored in 8,
+ 8192 byte registers.
+ 
+ 
+ A FEW INSTRUCTIONS
+ All methods are defined and coded according to the instructions give in
+ the 24C64A datashee from Fremont Micro Devices Inc (C) 2009. All references
+ to the datasheet refer to the 2009 copyrighted version.The datasheet is
+ referenced in the code so that the user can have further consult if more
+ information is needed.
+ 
+ A copy of the datasheet is included in the software download.
+ 
+ All references to "the device" refer to the 24C64A Two-Wire Serial EEPROM
+ from Fremont Micro Devices Inc.
+
+ 
+ UPDATES
+ Version 0.0
+ 2016/01/25:1902>
+ 			Started writing the code and making a few basic definitions. This
+ 			is a non-functional/non-tested version.
+ 2016/02/11:2208>
+ 			Finished functioning version.
+ Version 0.1
+ 2016/02/16:2343>
+ 			Starting making changes to curReg variable to make it easier to
+ 			sequentially write registers.
+
+ 
+ DISCLAIMER
+ The MIT License (MIT)
+ 
+ (C) Copyright 01/25/2016 by authors
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+ 
  */
 
 
