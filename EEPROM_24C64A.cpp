@@ -2,8 +2,8 @@
  
  FILENAME:		EEPROM_24C64A.cpp
  AUTHOR:		Orlando S. Hoilett
- EMAIL:			ohoilett@purdue.edu
- VERSION:		0.1
+ EMAIL:			orlandohoilett@gmail.com
+ VERSION:		1.0.0
  
  
  DESCRIPTION
@@ -37,6 +37,9 @@
  2016/02/16:2343>
  			Starting making changes to curReg variable to make it easier to
  			sequentially write registers.
+ Version 1.0.0
+ 2020/08/14:0813> (UTC-5)
+ 			Moved to the semantic versioning format.
 
  
  DISCLAIMER

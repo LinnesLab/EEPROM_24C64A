@@ -2,7 +2,7 @@
  
  FILENAME:		EEPROM_24C64A.h
  AUTHOR:		Orlando S. Hoilett
- EMAIL:			ohoilett@purdue.edu
+ EMAIL:			orlandohoilett@gmail.com
  
  
  Please see .cpp file for extended descriptions, instructions, and version updates
